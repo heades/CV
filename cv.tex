@@ -1,219 +1,285 @@
-% LaTeX resume using res.cls
-\documentclass[line,margin]{res} 
-%\usepackage{helvetica} % uses helvetica postscript font
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\documentclass{article} 
+\usepackage{hyperref}
+\usepackage{fullpage}
+\usepackage{color}
+\usepackage{titlesec}
 
+\titleformat{\section}
+{\normalfont\Large\bfseries}
+{}{0em}{}
+
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries}
+{}{0em}{}
+
+\title{\textbf{Curriculum Vitae\\Harley D. Eades III}\\
+  \vspace{10px}
+  {\normalsize
+  \begin{tabular}{rll}
+    Business Address: & Summerville Campus\\
+                      & Allgood Hall E-132\\
+                      & 2500 Walton Way\\
+                      & Augusta, Georgia 30904\\
+    Phone:            & (706)667-4543\\
+    Email:            & heades@gru.edu\\
+    Web:              & \url{http://www.metatheorem.org}\\
+\end{tabular}
+}}
+\date{}
 \begin{document}
+\maketitle
 
-\name{\small{Curriculum Vitae}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
-  \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
-  \ \ \ \ \ \ \ \ \large{Harley D. Eades III}}
+%% \name{\small{Curriculum Vitae}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+%%   \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+%%   \ \ \ \ \ \ \ \ \large{Harley D. Eades III}}
 
-% \address used twice to have two lines of address
-\address{104 Westside Dr. Apt. 10, Iowa City, IA 52246}
-\address{(217) 358-6999 harley-eades@uiowa.edu}
+%% % \address used twice to have two lines of address
+%% \address{1111 Sierra Lane, Grovetown, GA 30813}
+%% \address{(217) 358-6999 harley-eades@uiowa.edu}
 
- 
-\begin{resume}
- 
-  %\section{OBJECTIVE}
-  %			//
- 
-  \section{\small Education} 
-          {\sl Doctor of Philosophy,} University of Iowa, Iowa City, IA \hfill \\
-	  Computer Science, Anticipated graduation July, 2014\\
-          \ \\
-	  {\sl Masters of Science,} University of Iowa, Iowa City, IA \hfill May 2013 \\
-	  Computer Science\\
-          % \sl will be bold italic in New Century Schoolbook (or
-	  % any postscript font) and just slanted in
-	  % Computer Modern (default) font
-          \ \\
-          {\sl Bachelor of Science,} Millikin University, Decatur, IL \hfill May 2009 \\
-	  Double Major in Computer Science and Applied Mathematics\\
-          % \sl will be bold italic in New Century Schoolbook (or
-	  % any postscript font) and just slanted in
-	  % Computer Modern (default) font
+  
+  \section{Education and Professional History} 
+
+  \subsection{Higher Education}
+  \label{subsec:higher_education}
+  \begin{itemize}
+  \item[] Doctor of Philosophy in Computer Science, University of Iowa, IA, August 2014.
+  \item[] Masters of Science in Computer Science, University of Iowa, IA, May 2013.
+  \item[] Bachelor of Science in Applied Mathematics and Computer Science, Millikin University, IL, May 2009.
+  \end{itemize}
+  % subsection higher_education (end)
 		
-  \section{\small Additional Education} 
-         JAIST Spring School: Formal Reasoning: Theory and Application \hfill March 2012 \\
-         JAIST, Kanazawa, Japan\\
-         \ \\
-         Oregon Programming Languages Summer School \hfill July 2011\\
-         University of Oregon, Eugene, OR.                  
+  \subsection{Additional Education} 
+  \begin{itemize}
+  \item[] JAIST Spring School: Formal Reasoning: Theory and Application, JAIST, Kanazawa, Japan, March 2012.
 
-  \section{\small Experience} 
-                 {\sl Teaching Assistant - Informatics Project} \hfill Spring 2013\\
-		  University of Iowa, Iowa City, IA\\
-                  Graded homework and held weekly office hours.\\ 
-                  \\
-                 {\sl Research Assistant} \hfill Fall 2013 - Spring 2013\\
-                  University Iowa, Iowa City, IA.\\
-                  Investigated the applications of duality in constructive logic
-                  and type theory.\\
-                  \\
-                 {\sl Research Assistant} \hfill Fall 2010 - Fall 2012\\
-                  University Iowa, Iowa City, IA.\\
-                  On the design and meta-theory of a
-                  new dependently typed programming language called
-                  Trellys.\\
-                  \\
-                  {\sl Teaching Assistant - Introduction to Computer Science} \hfill Fall 2009\\
-		  University of Iowa, Iowa City, IA\\
-                  In charge of two lab sections held once a week.  Each section was
-                  approximately 30 students in size.  Graded several assignments as well
-                  as the midterm and final exam.  Met with students outside of class and
-                  lab to help them better understand class material.\\ 
-                  \\
-		  {\sl Web Developer} \hfill June 2007 - September 2009\\
-                  Grain Journal, Decatur, IL\\
-                  Managed twelve fully dynamic websites and a Postgres database.  Each
-                  website received approximately 5,000 hits a day.  Websites utilized
-                  AJAX, PHP, SQL, and XHTML.\\
-		  \\
-	          {\sl Teaching Assistant - Millikin Excel Program} \hfill Summer 2009\\
-		  Millikin University, Decatur, IL\\
-                  The Excel Program was a week long algebra book camp.
-                  Upon completion of the program the student was
-                  awarded his/her algebra I and II requirement.  Held
-                  office hours nightly.  Graded all homework
-                  assignments and quizzes.  Helped students with all
-                  in class assignments. \\
-                  \\
-		  {\sl Teaching Assistant - Discrete Mathematics} \hfill Spring 2009\\
-		  Millikin University, Decatur, IL\\
-		  Held office hours twice a week.  Graded majority of
-                  homework assignments.  Held review sessions before
-                  each exam.  Taught two class periods covering
-                  introduction to set theory and elementary counting
-                  and probability.\\
-		  
-                  \newpage
-	          {\sl Tutor - Theory of Computation} \hfill Spring 2009\\
-		  Millikin University, Decatur, IL\\
-		  Tutored a student who had to complete theory of
-                  computation as a self study.  Met with the student
-                  twice a week.  Made up examples and practice problem
-                  sets.\\ 
-                  \\
-		  {\sl Teaching Assistant Volunteer} \hfill Spring and Fall 2008\\
-		  Millikin University, Decatur, IL\\
-		  Volunteer teaching assistant for four computer
-                  science related courses.  Taught several class
-                  periods, held review sessions, kept office hours
-                  twice a week, and tutored students one-on-one.\\ 
-                  \\		  
-                  {\sl Research Assistant, with Dr. Rogers} \hfill Spring and Summer 2008\\
-		  Millikin University, Decatur, IL\\
-                  The project's objective was
-                  to research and develop the necessary software to allow computer science students
-                  at all levels to use GPS technology for class projects.
-                   
-                  
- \section{\small Research}
-                  \textbf{\large{Print-Journal Publications}}\\
-                  \ \\
-                  \textbf{Equational Reasoning about Programs with General Recursion and Call-by-value Semantics}.
-                  Garrin Kimmell, Aaron Stump, Harley D. Eades III, Peng Fu, Tim Sheard, Stephanie Weirich, 
-                  Chris Casinghino, Vilhelm Sjoberg, Nathan Collins and Ki Yung Ahn. 
-                  Special Issue on Advanced Programming Techniques for Construction of Robust, General and Evolutionary 
-                  Programs. Progress in Informatics, pages 19-46, March 2013, journal version of PLPV’12 paper. \\
-                  \ \\
-                  \textbf{\large{Electronic-Journal Publications}}\\
-                  \ \\
-                  \textbf{Hereditary Substitution for the $\lambda\Delta$-Calculus}. 
-                  Harley D. Eades III and Aaron Stump. 
-                  In Ugo de'Liguoro and Alexis
-                  Saurin, editors, Proceedings First Workshop on Control Operators and
-                  their Semantics, Eindhoven, The Netherlands, June 24-25, 2013 ,
-                  volume 127 of Electronic Proceedings in Theoretical Computer
-                  Science, pages 45-65. Open Publishing Association, 2013.\\
-                  \ \\
-                  \textbf{\large{Workshop Publications}}\\
-                  \ \\                  
-                  \textbf{Extended Abstract: Reconsidering Intuitionistic Duality}.
-                  Aaron Stump, Harley Eades III, and Ryan McCleeary. Workshop on Control Operators and their Semantics (COS).
-                  Affiliated with Rewriting, Deduction, and Programming (RDP). June 2013.\\
-                  \ \\
-                  \textbf{LFSC for SMT Proofs: Work in Progress}.
-                  Aaron Stump, Andrew Reynolds, Cesare Tinelli, Austin Laugesen, Harley D. Eades III, Corey Oliver and Ruoyu Zhang. 
-                  Proof Exchange For Theorem Proving (PxTP). 2012.\\
-                  \ \\
-                  \textbf{Irrelevance, heterogeneous equality, and call-by-value dependent type systems}.
-		  Vilhelm Sjoberg, Chris Casinghino, Ki Yung Ahn, Nathan Collins, Harley D. Eades III, Peng Fu, Garrin Kimmell, Tim Sheard, Aaron Stump, and Stephaine Weirich.
-		  In J. Chapman and P. B. Levy, editors, Proceedings Fourth Workshop on Mathematically Structured Functional Programming, Tallinn, 
-		  Estonia, 25 March 2012, volume 76 of Electronic Proceedings in Theoretical Computer Science, pages 112-162. Open Publishing Association, 2012.\\
-                  \ \\
-                  \textbf{Equational Reasoning about Programs with General Recursion and Call-by-value Semantics}.
-                  Garrin Kimmell, Aaron Stump, Harley D. Eades III, Peng Fu, Tim Sheard, Stephanie Weirich, 
-                  Chris Casinghino, Vilhelm Sjoberg, Nathan Collins and Ki Yung Ahn. 
-                  The Sixth ACM SIGPLAN Workshop Programming Languages meets Program Verification (PLPV), pages 15-26, 2012. \\
-                  
-                  \newpage
-                  \textbf{Hereditary Substitution for Stratified System F}. Harley D. Eades III and Aaron Stump. 
-                  International Workshop on Proof-Search in Type Theories (PSTT), 2010. Affiliated with 
-                  the Federated Logic Conference (FLoC).\\                  
+  \item[] Oregon Programming Languages Summer School, University of Oregon, Eugene, OR., July 2011.
+  \end{itemize}
+  
+  \subsection{Academic Positions}
+  \begin{itemize}
+  \item[] Assistant Professor of Computer Science, August 2014 - Present, Georgia Regents University Augusta.
+  \end{itemize}
 
-                  \textbf{\large{Workshop Talks}}\\
-                  \ \\                  
-                  \textbf{On the Categorical Structure of Bi-Intuitionistic Logics}. Harley D. Eades III.
-                  The University of Iowa Mini-Symposium. October 2013. Length: 30min.\\
-                  \ \\
-                  \textbf{The Categorical Structure of Semi-Bilinear Intuitionistic Logic}. Harley D. Eades III.
-                  Midwest Verification Day. September 2013. Length: 20min.\\
-                  \ \\
-                  \textbf{Hereditary Substitution for the $\lambda\Delta$-Calculus}. Harley D. Eades III. 
-                  Workshop on Control Operators and their Semantics (COS). 
-                  Affiliated with Rewriting, Deduction, and Programming (RDP). June 2013. Length: 20min.\\
-                  \ \\
-                  \textbf{Hereditary Substitution for the }$\lambda\Delta$\textbf{-Calculus}. Harley D. Eades III.
-                  Midwest Verification Day. September 2012. Length: 20min.\\
-                  \ \\
-                  \textbf{Hereditary Substitution for the }$\lambda\Delta$\textbf{-Calculus}. Harley D. Eades III.
-                  Fourth International Workshop on Classical Logic and Computation (CLC). July 2012. Affiliated with ICALP 2012.
-                  Length: 20min.\\
-                  \ \\
-                  \textbf{Separation of Proof from Program}.
-                  Harley D. Eades III. Midwest Verification Day. September 2011. Length: 20min.\\
-                  \ \\
-                  \textbf{Exploring the Reach of Hereditary Substitution}. Harley D. Eades III.
-                  Types for Proofs and Programs (TYPES), 2011. Length: 30min.\\
-                  \ \\
-                  \textbf{Hereditary Substitution for Stratified System F}. Harley D. Eades III. 
-                  International Workshop on Proof-Search in Type Theories (PSTT). July 2010. Length: 20min.\\
-                  
-                  \textbf{\large{Undergraduate Research Publications}}\\
-                  \ \\
-                  \textbf{Zero-Divisors and Their Graph Languages}. Harley D. Eades III. Rose-Hulman Undergraduate 
-                  Mathematics Journal. Vol. 10, Issue 2, 2009. \\
-                  \ \\
-                  \textbf{\large{Program Committees}}\\
-                  \ \\
-                  The Seventh ACM SIGPLAN Workshop on Programming Languages meets Program Verification (PLPV). 2013.\\
+  \subsection{Honors}
+  \begin{itemize}
+  \item[] The Graduate College Summer Fellowship, University of Iowa, 2013.
 
-                  \textbf{\large{Sub-Reviewing}}\\
-                  \ \\
-                  Logical Methods in Computer Science. 2013. Reviewed: 1 paper.\\
-                  \ \\
-                  The 11th International Conference on Typed Lambda Calculi and Applications (TLCA). 2013. Reviewed: 1 paper.\\
-                  \ \\
-                  The 19th International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS).
-                  2013. Reviewed: 1 paper.\\
-                  \ \\
-                  23rd International Conference on Rewriting Techniques and Applications (RTA). 2013. Reviewed: 1 paper.\\
-                  
-                 \newpage
-                  The 6th International Joint Conference on Automated Reasoning (IJCAR). 2012. Reviewed: 2 papers.\\                                    
- \section{\small Campus Leadership} 
-                  {\sl President} \hfill September 2006 - May 2009\\
-	          The Association For Computing Machinery, Millikin University\\ 
-	          Increased membership by 50, helped implement a super computing cluster, organized event schedule and coordinated events.
-            
-                  \section{Honors}
-                  The Graduate College Summer Fellowship, University of Iowa    \hfill 2013\\
-                  The Strategic Initiative Funds Fellowship, University of Iowa \hfill 2011\\
-                  Mathematics and Computer Science Award, Millikin University   \hfill 2009  \\
-		  Mathematics and Computer Science Award, Millikin University   \hfill 2008  \\
-		  Mathematics and Computer Science Award, Millikin University   \hfill 2007  \\
-\end{resume}
+  \item[] The Strategic Initiative Funds Fellowship, University of Iowa, 2011.
+    
+  \item[] Mathematics and Computer Science Award, Millikin University, 2009.  
+
+  \item[] Mathematics and Computer Science Award, Millikin University, 2008.  
+
+  \item[] Mathematics and Computer Science Award, Millikin University, 2007.
+  \end{itemize}
+
+  \section{Memberships}
+  \label{sec:memberships}
+  \begin{itemize}
+  \item[] ACM Special Interest Group on Logic and Computation, member.
+    
+  \item[] ACM Special Interest Group on Programming Languages, member.
+    
+  \item[] Eurpoean Association of Theoretical Computer Science, member.
+  \end{itemize}
+  % section memberships (end)
+
+  \section{Teaching}
+  \textbf{\large{Teaching Assignments at Georgia Regents University (2014 - Present)}}\\
+  \ \\
+  \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|}
+    \hline
+    \textbf{SEMESTER} & \multicolumn{2}{c|}{\textbf{COURSE TAUGHT}}\\                    
+    \hline
+    & \textbf{Course Number and Title} & \textbf{Students Enrolled}\\
+    \hline
+    Fall 2015       & \begin{tabular}{lll}
+      CSCI:3030 & ``Mathematical Structures in Computer Science``\\
+      CSCI:3300 & ``Programming Languages``\\
+      CSCI:3500 & ``Theory of Computation``\\
+    \end{tabular}
+    & \begin{tabular}{lll}
+        18\\ 13 \\ 12
+      \end{tabular}                          \\
+    \hline                    
+    Spring 2015       & \begin{tabular}{lll}
+      CSCI:3030 & ``Mathematical Structures in Computer Science``\\
+      CSCI:3500 & ``Theory of Computation``\\
+    \end{tabular}
+    & \begin{tabular}{lll}
+        22\\ 17
+      \end{tabular}                          \\
+    \hline
+    Fall 2014         & \begin{tabular}{lll}
+      CSCI:3300 & ``Programming Languages``\\
+      CSCI:3500 & ``Theory of Computation``\\
+    \end{tabular}
+    & \begin{tabular}{lll}
+        20\\ 6      \end{tabular}                          \\
+    \hline    
+  \end{tabular}
+  
+  \section{Scholarship}
+  \label{sec:scholarship}
+  
+  \subsection{Print-Journal Publications}
+  \begin{enumerate}
+  \item \textbf{Equational Reasoning about Programs with General Recursion and Call-by-value Semantics}.
+  Garrin Kimmell, Aaron Stump, Harley D. Eades III, Peng Fu, Tim Sheard, Stephanie Weirich, 
+  Chris Casinghino, Vilhelm Sjoberg, Nathan Collins and Ki Yung Ahn. 
+  Special Issue on Advanced Programming Techniques for Construction of Robust, General and Evolutionary 
+  Programs. Progress in Informatics, pages 19-46, March 2013, journal version of PLPV’12 paper. 
+  \end{enumerate}
+
+  \subsection{Electronic-Journal Publications}
+
+  \begin{enumerate}
+  \item \textbf{Hereditary Substitution for the
+    $\lambda\Delta$-Calculus}.  Harley D. Eades III and Aaron Stump.
+    In Ugo de'Liguoro and Alexis Saurin, editors, Proceedings First
+    Workshop on Control Operators and their Semantics, Eindhoven, The
+    Netherlands, June 24-25, 2013 , volume 127 of Electronic
+    Proceedings in Theoretical Computer Science, pages 45-65. Open
+    Publishing Association, 2013.
+  \end{enumerate}
+
+  \subsection{Workshop Publications}
+  \begin{enumerate}
+  \item \textbf{Extended Abstract: Reconsidering Intuitionistic Duality}.
+    Aaron Stump, Harley Eades III, and Ryan McCleeary. Workshop on Control Operators and their Semantics (COS).
+    Affiliated with Rewriting, Deduction, and Programming (RDP). June 2013.
+    
+  \item \textbf{LFSC for SMT Proofs: Work in Progress}.
+    Aaron Stump, Andrew Reynolds, Cesare Tinelli, Austin Laugesen, Harley D. Eades III, Corey Oliver and Ruoyu Zhang. 
+    Proof Exchange For Theorem Proving (PxTP). 2012.
+    
+  \item \textbf{Irrelevance, heterogeneous equality, and call-by-value dependent type systems}.
+    Vilhelm Sjoberg, Chris Casinghino, Ki Yung Ahn, Nathan Collins, Harley D. Eades III, Peng Fu, Garrin Kimmell, Tim Sheard, Aaron Stump, and Stephaine Weirich.
+    In J. Chapman and P. B. Levy, editors, Proceedings Fourth Workshop on Mathematically Structured Functional Programming, Tallinn, 
+    Estonia, 25 March 2012, volume 76 of Electronic Proceedings in Theoretical Computer Science, pages 112-162. Open Publishing Association, 2012.
+    
+  \item \textbf{Equational Reasoning about Programs with General Recursion and Call-by-value Semantics}.
+    Garrin Kimmell, Aaron Stump, Harley D. Eades III, Peng Fu, Tim Sheard, Stephanie Weirich, 
+    Chris Casinghino, Vilhelm Sjoberg, Nathan Collins and Ki Yung Ahn. 
+    The Sixth ACM SIGPLAN Workshop Programming Languages meets Program Verification (PLPV), pages 15-26, 2012. 
+    
+  \item \textbf{Hereditary Substitution for Stratified System F}. Harley D. Eades III and Aaron Stump. 
+    International Workshop on Proof-Search in Type Theories (PSTT), 2010. Affiliated with 
+    the Federated Logic Conference (FLoC).
+  \end{enumerate}
+
+  \subsection{Posters}
+  \label{subsec:posters}
+  \begin{enumerate}
+  \item \textbf{Full Intuitionistic Linear Logic (FILL).} Harley Eades
+    III and Valeria de Paiva. Entry in Encyclopedia of Proof
+    Systems. Presented as a Poster at the 25th jubilee edition of the
+    International Conference on Automated Deduction (CADE). \url{http://proofsystem.github.io/Encyclopedia/}. 2015.
+  \end{enumerate}
+  % subsection posters (end)
+
+  \subsection{Workshop Talks}
+    \begin{enumerate}
+    \item \textbf{Dualized Type Theory.} Harley D. Eades III.
+      Fifth International Workshop on Classical Logic and Computation (CL\&C). July 2014. Affiliated with
+      CSL-LICS 2014. Length: 20min.
+      
+    \item \textbf{On the Categorical Structure of Bi-Intuitionistic Logics}. Harley D. Eades III.
+      The University of Iowa Mini-Symposium. October 2013. Length: 30min.
+      
+    \item \textbf{The Categorical Structure of Semi-Bilinear Intuitionistic Logic}. Harley D. Eades III.
+      Midwest Verification Day. September 2013. Length: 20min.
+      
+    \item \textbf{Hereditary Substitution for the $\lambda\Delta$-Calculus}. Harley D. Eades III. 
+      Workshop on Control Operators and their Semantics (COS). 
+      Affiliated with Rewriting, Deduction, and Programming (RDP). June 2013. Length: 20min.
+      
+    \item \textbf{Hereditary Substitution for the }$\lambda\Delta$\textbf{-Calculus}. Harley D. Eades III.
+      Midwest Verification Day. September 2012. Length: 20min.
+      
+    \item \textbf{Hereditary Substitution for the }$\lambda\Delta$\textbf{-Calculus}. Harley D. Eades III.
+      Fourth International Workshop on Classical Logic and Computation (CL\&C). July 2012. Affiliated with ICALP 2012.
+      Length: 20min.
+      
+    \item \textbf{Separation of Proof from Program}.
+      Harley D. Eades III. Midwest Verification Day. September 2011. Length: 20min.
+
+    \item \textbf{Exploring the Reach of Hereditary Substitution}. Harley D. Eades III.
+      Types for Proofs and Programs (TYPES), 2011. Length: 30min.
+
+    \item \textbf{Hereditary Substitution for Stratified System F}. Harley D. Eades III. 
+      International Workshop on Proof-Search in Type Theories (PSTT). July 2010. Length: 20min.
+    \end{enumerate}
+  
+    \subsection{Undergraduate Research Publications}
+    \begin{enumerate}
+      \item   \textbf{Zero-Divisors and Their Graph Languages}. Harley D. Eades III. Rose-Hulman Undergraduate 
+        Mathematics Journal. Vol. 10, Issue 2, 2009. 
+    \end{enumerate}
+
+    \subsection{Other Work}
+    \label{subsec:other_work}
+    \begin{enumerate}
+    \item \textbf{Two-sided Linear Sequent Calculus.} Elaine Pimentel and Harley Eades III. Entry in Encyclopedia of Proof Systems. \url{http://proofsystem.github.io/Encyclopedia/}. 2015.
+
+    \item \textbf{Constructive Modal Logic S4 (CS4).} Harley Eades III and Valeria de Paiva. Entry in Encyclopedia of Proof Systems. \url{http://proofsystem.github.io/Encyclopedia/}. 2015.
+
+    \item \textbf{Full Intuitionistic Logic.} Harley Eades III and Valeria de Paiva. Entry in Encyclopedia of Proof Systems. \url{http://proofsystem.github.io/Encyclopedia/}. 2015.
+    \end{enumerate}
+    % subsection other_work (end)
+
+    % section scholarship (end)
+    
+  \section{Service}
+  \label{sec:service}
+  \subsection{Program Committees}
+  \label{subsec:program_committees}
+  \begin{itemize}
+  \item[] 2013. The Seventh ACM SIGPLAN Workshop on Programming Languages meets Program Verification (PLPV).
+  \end{itemize}
+  % subsection program_committees (end)
+
+  \subsection{Subreviewing}
+  \label{subsec:subreviewing}  
+  \begin{itemize}
+  \item[] The 13th International Conference on Typed Lambda Calculi and Applications (TLCA). 2015. Reviewed: 1 paper.
+    
+  \item[] Logical Methods in Computer Science. 2015. Reviewed: 1 paper.
+    
+  \item[] The 7th International Joint Conference on Automated Reasoning (IJCAR). 2014. Reviewed: 1 paper.
+
+  \item[] Joint Meeting of the Twenty-Third EACSL Annual Conference on Computer Science Logic (CSL) and the Twenty-Ninth Annual ACM/IEEE Symposium on Logic in Computer Science (LICS). 2014. Reviewed: 1 paper
+
+  \item[] Logical Methods in Computer Science. 2013. Reviewed: 1 paper.
+    
+  \item[] The 11th International Conference on Typed Lambda Calculi and Applications (TLCA). 2013. Reviewed: 1 paper.
+
+  \item[] The 19th International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS).
+    2013. Reviewed: 1 paper.
+  
+  \item[] The 23rd International Conference on Rewriting Techniques and Applications (RTA). 2013. Reviewed: 1 paper.
+
+  \item[] The 6th International Joint Conference on Automated Reasoning (IJCAR). 2012. Reviewed: 2 papers.
+  \end{itemize}
+  % subsection subreviewing (end)
+  
+  \subsection{University Service}
+  \label{subsec:university_service}
+  \begin{itemize}
+  \item[] Internal Advisory Committee for the Cyber Institute, Georgia Regents University, 2014 - Present.
+  \end{itemize}
+  % subsection university_service (end)
+
+  \subsection{College Service}
+  \label{subsec:college_service}
+  \begin{itemize}
+  \item[] The Undergraduate Curriculum Committee, Georgia Regents University, 2015 - Present.
+    
+  \item[] The ABET Assessment Committee, Georgia Regents University, 2015 - Present.
+  
+  \item[] The Computer Science Curriculum Committee, Georgia Regents University, 2015 - Present.
+  \end{itemize}
+  % subsection college_service (end)  
+  % section service (end)  
 \end{document}
