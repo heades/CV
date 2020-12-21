@@ -1,0 +1,36 @@
+\documentclass[11pt]{article}
+\usepackage{hyperref}
+\usepackage{fullpage}
+\usepackage{color}
+\usepackage{titlesec}
+\usepackage{longtable,booktabs,array}
+
+\pagenumbering{gobble}
+
+\titleformat{\section}
+{\normalfont\normalsize\bfseries }
+{}{0em}{\MakeUppercase}
+
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries}
+{}{0em}{}
+
+%% Pandoc:
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\title{\vspace{-50px}$title$\vspace{-45px}}
+
+\date{}
+\begin{document}
+\maketitle
+
+\begin{tabular}{lll}
+  \textbf{$author$}\\
+  $contact$\\
+\end{tabular}
+
+$body$
+
+\end{document}
