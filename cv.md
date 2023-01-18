@@ -1,6 +1,7 @@
 ---
 title: 'Curriculum Vitae'
 author: 'Harley Eades III, Ph.D.'
+updated: '1-18-2023'
 contact: |
   Associate Professor \
   School of Computer and Cyber Sciences \
@@ -51,6 +52,18 @@ contact: |
 - Eurpoean Association of Theoretical Computer Science (2011--Present)
 
 # National and International Service:
+
+- Cochair (2022), International Workshop on Type-Driven Development (TyDe).
+
+- Reviewer (2022), Types Workshop.
+
+- Reviewer (2022), 7th International Conference on Formal Structures for Computation and Deduction (FSCD).
+
+- Programming Computation Memberships (2022), Ninth Workshop on Mathematically Structured Functional Programming (MSFP)
+
+- Reviewer (2021), ACM Transactions on Computational Logic (TOCL).
+
+- Reviewer (2021), Journal of Functional Programming (JFP).
 
 - Programming Committee Member (2021), The International Conference on Functional Programming (ICFP).
 
@@ -118,21 +131,21 @@ contact: |
 
 # University/College Service:
 
-- Faculty Chair of the School of Computer and Cyber Sciences Colloquium Series (Spring 2020 -- Present)
-
 - SCCS Promotion and Tenure Committee (Fall 2020 -- Present)
-
-- Faculty Chair of the School of Computer and Cyber Sciences
-  Chapter of Upsilon Pi Epsilon (UPE), the International Honor Society
-  for the Computing and Information Disciplines (Spring 2019 -- Present)
 
 - Member of the Graduate School of Augusta University (Spring 2019 -- Present)
 
-- CURS Faculty Advisory Committee (2017--Present)
-
 - SCCS Faculty Affairs Committee, Augusta University (2017--Present)
 
-- IT Advisory Committee: Research Advisory Subcommittee (2016--Present)
+- Faculty Chair of the School of Computer and Cyber Sciences Colloquium Series (Spring 2020 -- Spring 2021)
+
+- Faculty Chair of the School of Computer and Cyber Sciences
+  Chapter of Upsilon Pi Epsilon (UPE), the International Honor Society
+  for the Computing and Information Disciplines (Spring 2019 -- Spring 2021)
+
+- CURS Faculty Advisory Committee (2017--2022)
+
+- IT Advisory Committee: Research Advisory Subcommittee (2016--2021)
 
 - SCCS Masters in Computer Science Proposal Committee (Spring 2019)
 
@@ -195,15 +208,20 @@ contact: |
 
 # Refereed Conference and Workshop Publications
 
-- __Graded Modal Dependent Type Theory.__
-  Benjamin Moon, Harley Eades III, Dominic Orchard.
-  To appear: 30th European Symposium on Programming (ESOP 2021).
-  Preprint: <https://arxiv.org/abs/2010.13163>
+- __A Dependent Dependency Calculus.__ Pritam Choudhury, Harley Eades
+  III, Stephanie Weirich. In the Proceedig of the 31st European
+  Symposium on Programming (ESOP 2022), pp 403-430. DOI:
+  10.1007/978-3-030-99336-8_15.
 
-- __A graded dependent type system with a usage-aware semantics__.  
-  Pritam Choudhury, Harley Eades III, Richard A. Eisenberg, and Stephanie C Weirich.
-  To appear: 48th ACM SIGPLAN Symposium on Principles of Programming Languages (POPL 2021).
-  Preprint: <https://arxiv.org/abs/2011.04070>
+- __Graded Modal Dependent Type Theory.__ Benjamin Moon, Harley Eades
+  III, Dominic Orchard.  In the Proceedings of the 30th European
+  Symposium on Programming (ESOP 2021), pp 462-490. DOI:
+  10.1007/978-3-030-72019-3_17.
+
+- __A graded dependent type system with a usage-aware semantics__.
+  Pritam Choudhury, Harley Eades III, Richard A. Eisenberg, and
+  Stephanie Weirich. 2021. Proc. ACM Program. Lang. 5, POPL, Article
+  50 (January 2021), 32 pages. DOI: 10.1145/3434331
 
 - __Extended Abstract: Towards Graded Modal Dependent Types.__
   Benjamin Moon, Harley Eades III, Dominic Orchard.
@@ -373,8 +391,27 @@ contact: |
 
 # Grants/Funding
 
-Percent Funded: 25\% \      
-Total Funded: \$84,484 \
+Percent Funded: 33\% (3 funded / 9 submited)\
+Total Funded: \$510,897
+\
+\begin{tabular}{|l|l|l|}
+  \hline
+  \textbf{Title} & SHF:SMALL: Semantically and Practically Generalizing \\
+  & Graded Modal Types\\
+  \hline
+  \textbf{Funding Organization} & National Science Foundation (NSF)\\
+  \hline
+  \textbf{\$ Amount Requested} & \$426,413\\
+  \hline
+  \textbf{Type} & External\\
+  \hline
+  \textbf{PI(s)} & Harley Eades III\\
+  \hline
+  \textbf{Beginning/Ending Dates} & April 2021 - May 2024\\
+  \hline
+  \textbf{Status} (Unfunded, Funded, Pending) & Funded\\
+  \hline
+\end{tabular}
 \
 \begin{tabular}{|l|l|l|}
   \hline
